@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 600, 700;
+  font-size: 16px;
+
+}
+body{
+    font-size: 16px;
+}
+
+
+.top-pic{
+    width: calc(100%);
+    height: 270px;
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: cover;
+}
+.down-pic{
+    width: calc(100%);
+    height: 350px;
+    background-color: #e5d0f1;
+}
+
+.form-pop{
+    width: 450px;
+    height: 440px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    z-index: 1;
+    margin-top: -45%;
+    right: -30%;
+    border-radius: 15px;
+}
+.star{
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.faq{
+    position: relative;
+    margin-top: -11%;
+    z-index: 1;
+    left: 10%;
+    font-size: 42px;
+    font-weight: 900 bolder;
+    color: hsl(292, 42%, 14%);
+}
+
+.toggle-image {
+    width: 20px; 
+    height: 20px; 
+    position: relative;
+    z-index: 2;
+    right: -95%;
+    margin-bottom: -9%;
+
+  }
+  
+  .active .toggle-image {
+    content: url('assets/images/icon-minus.svg'); 
+    border: none;
+  }
+  
+  .accordion-content {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+    color: #bcaebf;
+  }
+  
+
+  .accordion-header {
+    cursor: pointer;
+    border-bottom: 0.5px solid #ccc;
+    position: relative;
+    margin-left: 2%;
+  }
+  
+  .accordion{
+    position: relative;
+    z-index: 1;
+    left: -10%;
+    margin-top: -5%;
+  }
+
+  .accordion-header:hover{
+    cursor: pointer;
+    color: #af23e6;
+  }
+
+
+@media screen and (max-width: 375px) {
+  .top-pic,
+  .down-pic {
+    height: 150px; 
+  }
+
+  .form-pop {
+    width: 90%; 
+    max-width: 300px;
+    margin: 0 auto; 
+    margin-top: -10%; 
+    
+  }
+
+  .faq {
+    font-size: 28px; 
+    margin-top: -10%; 
+    text-align: center; 
+  }
+
+  .toggle-image {
+    display: block; /* Ensure the toggle image is displayed as a block */
+    margin: 0 auto; /* Center the toggle image */
+    margin-top: -8%; /* Adjust margin from top */
+  }
+
+  .accordion {
+    margin-top: -5%; /* Adjust margin from top */
+  }
+
+  .accordion-header {
+    margin-left: 0; /* Reset left margin for smaller screens */
+  }
+}
+
+/* Adjustments for larger screens (Desktop: 1440px) */
+@media screen and (min-width: 1440px) {
+  .top-pic,
+  .down-pic {
+    height: 300px; /* Increase height for larger screens */
+  }
+
+  .form-pop {
+    width: 50%; /* Take up 50% of the viewport width */
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the form */
+    margin-top: -20%; /* Adjust margin from top */
+  }
+
+  .faq {
+    font-size: 48px; /* Increase font size for larger screens */
+    margin-top: -15%; /* Adjust margin from top */
+  }
+
+  .toggle-image {
+    margin-top: -5%; /* Adjust margin from top */
+  }
+
+  .accordion {
+    margin-top: -5%; /* Adjust margin from top */
+  }
+}
+
